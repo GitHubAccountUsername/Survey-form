@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    
+    <div id="title-container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve</p>
+    </div>
+        <form id="survey-form">
+            <label id="name-label">Name</label>    
+            <input id="widef" type="text" name="name-label" id="name" placeholder="Enter your name" required>
+
+            <label id="email-label">Email</label>    
+            <input id="widef" type="email" name="email-label" id="email" placeholder="Enter your Email" required>
+
+            <label id="number-label">Age (optional)</label>    
+            <input id="widef" type="number" name="number-label" id="number" placeholder="Enter your age" max="65" min="18">
+
+            <label id="dropdown">Which option best describes your current role?</label>    
+            <select id="widef" name="dropdown" id="dropdown" required>
+                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="fjob">Full time job</option>
+                <option value="flearner">Full time learner </option>
+                <option value="nosay">Prefer not to say</option>
+                <option value="others">Others</option>
+            </select>
+
+            <p id="recommend">Would you recommend our website to a friend?</p>
+            <label for="defenitly"><input type="radio" value="rad" name="radiorec" checked>Defenitly</label>
+            <label for="maybe"><input type="radio" value="rad" name="radiorec">Maybe</label>
+            <label for="nsur"><input type="radio" value="rad" name="radiorec">Not sure</label>
+
+            <label id="dropdown2">What is your favorite feature of our website?</label>    
+            <select id="widef" name="dropdown2" id="dropdown2" required>
+                <option disabled selected value>Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="osource">Open source</option>
+            </select>
+
+            <div>What would you like to see improved?</div>
+            <label for="uinterface"><input type="checkbox" value="checkbox">User interface</label>
+            <label for="ltime"><input type="checkbox" value="checkbox">Loading time</label>
+            <label for="wcolors"><input type="checkbox" value="checkbox">Websites colors</label>
+
+            <p>Any comment or suggestion?</p>
+            <textarea id="widef" id="box" placeholder="Enter your comment here..."></textarea>
+            <br><button id="widef" id="submit" type="submit">Submit</button>
+        </form>
+
+    
+    
+
+</body>
+</html>
